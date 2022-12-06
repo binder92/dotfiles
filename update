@@ -1,0 +1,76 @@
+#!/usr/bin/env zsh
+
+###############
+##   SETUP   ##
+###############
+
+source $HOME/dotfiles/colors
+
+function question {
+    ask="Run '"
+    ask+=$iCyan
+    ask+=$1
+    ask+=$Reset
+    ask+="'?"
+    ask+=$Yellow
+    ask+=" [Y/n] "
+    ask+=$Reset
+
+    echo -n "$ask"
+    read wannaUpdate
+}
+
+function runCommand {
+    if [ "$wannaUpdate" = "" -o "$wannaUpdate" = "Y" -o "$wannaUpdate" = "y" ]; then
+        $*
+    fi
+}
+
+function line {
+    echo ""
+}
+
+
+##############
+##   MAIN   ##
+##############
+
+echo $bGreen
+echo "############################"
+echo "# Let's update your system #"
+echo "############################"
+echo $Reset
+
+question "valet stop"
+runCommand valet stop
+
+line
+
+question "brew update"
+runCommand brew update
+
+line
+
+question "brew upgrade"
+runCommand brew upgrade
+
+line
+
+question "brew cleanup"
+runCommand brew cleanup --prune=0 -s
+
+line
+
+question "composer global update"
+runCommand composer global update
+
+line
+
+question "valet install"
+runCommand valet install
+
+echo $bGreen
+echo "#############################"
+echo "# Everything is up to date! #"
+echo "#############################"
+

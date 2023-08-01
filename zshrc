@@ -1,5 +1,6 @@
 export PATH=$HOME/bin:/usr/local/bin:$PATH
 export PATH=$HOME/.composer/vendor/bin:$PATH
+export PATH=$HOME/.yarn/bin:$PATH
 export PATH=/usr/local/sbin:$PATH
 export ZSH="$HOME/.oh-my-zsh"
 

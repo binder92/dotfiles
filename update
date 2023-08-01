@@ -52,7 +52,7 @@ runCommand brew update
 line
 
 question "brew upgrade"
-runCommand brew upgrade
+runCommand brew upgrade --greedy
 
 line
 

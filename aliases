@@ -5,7 +5,7 @@ alias aliases="vim $HOME/dotfiles/aliases"
 alias composer="COMPOSER_MEMORY_LIMIT=-1 composer"
 
 alias update="$HOME/dotfiles/update"
-alias updates="vim $HOME/dotfiles/.update"
+alias updates="vim $HOME/dotfiles/update"
 
 alias dirsize="du -h -c ./ | tail -1"
 

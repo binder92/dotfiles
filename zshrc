@@ -15,9 +15,9 @@ plugins=(git)
 
 source $ZSH/oh-my-zsh.sh
 
-export EDITOR='vim'
+export EDITOR='nano'
 
-source "$HOME/dotfiles/aliases"
+source "$HOME/Projects/Own/dotfiles/aliases"
 
 eval "$(fnm env --use-on-cd)"
 

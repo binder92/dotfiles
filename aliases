@@ -1,16 +1,18 @@
 # General
-alias zshconfig="vim $HOME/dotfiles/zshrc"
-alias aliases="vim $HOME/dotfiles/aliases"
+alias zshconfig="nano $HOME/Projects/Own/dotfiles/zshrc"
+alias aliases="nano $HOME/Projects/OWn/dotfiles/aliases"
 
 alias composer="COMPOSER_MEMORY_LIMIT=-1 composer"
 
-alias update="$HOME/dotfiles/update"
-alias updates="vim $HOME/dotfiles/update"
+alias update="$HOME/Projects/Own/dotfiles/update"
+alias updates="nano $HOME/Projects/Own/dotfiles/update"
 
 alias dirsize="du -h -c ./ | tail -1"
 
 # Codes
-alias code="cd $HOME/Projects"
+alias codes="cd $HOME/Projects"
+alias tmrw_codes="cd $HOME/Projects/TMRW"
+alias own_codes="cd $HOME/Projects/Own"
 
 # Artisan
 alias pa="valet php artisan"

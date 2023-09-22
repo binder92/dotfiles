@@ -33,3 +33,6 @@ alias nah="git reset --hard && git clean -df"
 
 # AWS
 alias aws_dir="cd ~/.aws/"
+
+# SSH
+alias ssh_config="nano ~/.ssh/config"

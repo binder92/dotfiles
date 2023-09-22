@@ -31,3 +31,5 @@ alias gs="git status"
 alias gl="git log"
 alias nah="git reset --hard && git clean -df"
 
+# AWS
+alias aws_dir="cd ~/.aws/"

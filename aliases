@@ -36,3 +36,6 @@ alias aws_dir="cd ~/.aws/"
 
 # SSH
 alias ssh_config="nano ~/.ssh/config"
+
+# BREW
+alias buu="brew update && brew upgrade"

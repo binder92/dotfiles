@@ -9,6 +9,8 @@ alias updates="nano $HOME/Projects/Own/dotfiles/update"
 
 alias dirsize="du -h -c ./ | tail -1"
 
+alias hosts="sudo nano /private/etc/hosts"
+
 # Codes
 alias codes="cd $HOME/Projects"
 alias tmrw_codes="cd $HOME/Projects/TMRW"
